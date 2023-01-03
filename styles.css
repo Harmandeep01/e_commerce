@@ -10,12 +10,17 @@ body{
 }
 
 img{
-    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#background{
+
 }
 
 .card{
     min-width:18rem;
-    max-width: 30rem;
+    max-width: 40rem;
 }
 
 .perfume{
@@ -42,15 +47,20 @@ h5{
 .btn:hover {
     background-color: hsl(158, 45%, 20%);
 }
+
+.bi{
+    padding: 1%;
+    align-items: center;
+}
+
 .btn{
+    
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     background-color: hsl(158, 36%, 37%);
     color: hsl(0, 0%, 100%);
-    padding: 20px;
-    border-style: none;
+    border-style: none; 
     border-radius: 10px;
     height: 50px;
     width: 100%;
-    margin :5px
 }

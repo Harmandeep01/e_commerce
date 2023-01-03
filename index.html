@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
+
+  <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
   <title>Frontend Mentor | Product preview card component</title>
@@ -18,8 +25,14 @@
 
       <div class="card m-2">
           <div class="row g-0">
-            <div class="col-12 col-lg-6">
-              <img src="images/image-desktop.jpg" class="img-fluid rounded-start" alt="perfume">
+            <div class="col-12 col-lg-6" id="background">
+              <!-- <img srcset="images/image-product-mobile.jpg , images/image-desktop.jpg" alt=""> -->
+              <img
+                   srcset="images/image-product-mobile.jpg 480w, images/image-desktop.jpg 800w"
+                   sizes="(min-width:144px)(max-width:480px) 1024px,
+                  1920px"
+                   src="images/image-product-mobile.jpg"
+                   alt="Perfume" />
             </div>
             <div class="col-lg-6">
               <div class="card-body">
@@ -31,7 +44,9 @@
                 <div class="prices">
                   <span class="sale-price">$149.99</span>
                   <span class="list-price">$169.99</span></div><b>
-                  <a class="btn fa-solid " href="#" role="button">Add to cart</a>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn" type="button"><i class="bi bi-cart"></i>  Add to Cart</button>
+                    </div>
                 </div> 
               </div>
             </div>
@@ -50,7 +65,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Harmandeep</a>.
   </div>
 </body>
 </html>
