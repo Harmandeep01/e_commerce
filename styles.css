@@ -1,66 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+:root {
+    --color:#3c8067;
+    --font:"Montserrat", sans-serif;;
+}
 body{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font);
     display: grid;
     min-height: 100vh;
     place-content: center;
+    background-color: #f2ebe3;
 }
-
-img{
+.container {
+    max-width: 500px;
+}
+/* img{
     max-width: 100%;
     max-height: 100%;
-}
+} */
 
-#background{
-
+.parent-img {
+    position: relative;
 }
-
-.card{
-    min-width:18rem;
-    max-width: 40rem;
+.row {
+    border-radius: 1rem;
 }
-
-.perfume{
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size:small
+h3 , h2 , h1 ,p {
+font-family: var(--font);
 }
-
-h5{
-    font-family: "Fraunces", serif;
-    font-weight: bold;
-    font-size:xx-large;
-    color: hsl(212, 21%, 14%);
-}
-.sale-price{
-    font-family: "Fraunces", serif;
-    color:hsl(158, 36%, 37%);
-    font-size: 1.7rem;
-    margin-right: 20px;
-}
-.list-price{
-    text-decoration: line-through;
-}
-.btn:hover {
-    background-color: hsl(158, 45%, 20%);
-}
-
-.bi{
-    padding: 1%;
-    align-items: center;
-}
-
-.btn{
-    
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    background-color: hsl(158, 36%, 37%);
-    color: hsl(0, 0%, 100%);
-    border-style: none; 
-    border-radius: 10px;
-    height: 50px;
+.img-card {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-image: url("images/image-desktop.jpg");
     width: 100%;
+    background-size: cover;
+    height: 100%!important;
 }
+.container {
+    max-width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 300px;
+    }
+    .img-card {
+border-radius: 1rem 1rem 0 0;
+        background-image: url("images/image-product-mobile.jpg");
+        width: 100%;
+        background-size: cover;
+        height: 12rem!important;
+        background-position: center top;
+    }
+
+    }
+
+    .btn {
+        background-color: var(--color);
+        color: white;
+    }
+    h3 {
+        color: #3c8067;
+        font-weight: 600;
+    }
+
+    h5 {
+        text-decoration:line-through;
+    }
