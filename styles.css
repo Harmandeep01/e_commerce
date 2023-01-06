@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 /* .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } */
 
@@ -8,7 +9,7 @@
     --font:"Montserrat", sans-serif;;
 }
 body{
-    font-family: var(--font);
+    font-family: "Montserrat", sans-serif;
     display: grid;
     min-height: 100vh;
     place-content: center;
@@ -28,9 +29,26 @@ body{
 .row {
     border-radius: 1rem;
 }
-h3 , h2 , h1 ,p {
-font-family: var(--font);
+
+.heading-2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Fraunces", serif;
 }
+
+.heading-3{
+    font-family: "Fraunces", serif;
+    color:hsl(158, 36%, 37%);
+    font-size: 1.7rem;
+    margin-right: 20px;
+}
+
+.heading-4{
+    font-size: small;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
 .img-card {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -40,33 +58,48 @@ font-family: var(--font);
     height: 100%!important;
 }
 .container {
-    max-width: 600px;
+    max-width:600px;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        max-width: 300px;
-    }
-    .img-card {
-border-radius: 1rem 1rem 0 0;
-        background-image: url("images/image-product-mobile.jpg");
-        width: 100%;
-        background-size: cover;
-        height: 12rem!important;
-        background-position: center top;
-    }
+#price {
+    align-self: center;
+    font-size:1.2rem;
+    color: black;
+    text-decoration:line-through;
+}
+   
 
-    }
-
-    .btn {
+    .btn-lg {
+        font-size:large;
+        font-weight: 600;
         background-color: var(--color);
         color: white;
     }
-    h3 {
-        color: #3c8067;
-        font-weight: 600;
+
+    .btn:hover {
+        background-color:#26614d;
+        color: white;
     }
 
-    h5 {
-        text-decoration:line-through;
+    .fa-cart-shopping {
+        margin-right: 10px;
     }
+
+    h3 {
+        color: #3c8067;
+    }
+
+    @media screen and (max-width: 768px) {
+        .container {
+            max-width: 300px;
+        }
+        .img-card {
+            border-radius: 1rem 1rem 0 0;
+            background-image: url("images/image-product-mobile.jpg");
+            width: 100%;
+            background-size: cover;
+            height: 12rem!important;
+            background-position: center top;
+        }
+    
+        }
