@@ -21,14 +21,38 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="container my-4">
+  <div class="row border bg-light">
+    <div class="parent-img col-12 col-sm-12 col-xs-6 col-md-6 p-0">
+      <div class="img-card mx-0"></div>
+    </div>
+    <div class="card-text col-12 col-sm-12 col-xs-6 col-md-6 py-3">
+      <h4 class="heading-4 text-muted my-2"> Perfume</h4>
+      <h2 class="heading-2 size-md my-4">Gabrielle Essence Eau De Parfum</h2>
+      <p class="text-muted">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+    <!-- prices -->
+    <div class="prices d-flex flex-row gap-5 my-4">
+      <h3 class="heading-3">112.00$</h3>
+      <h5 class="heading-5">99.00$</h5>
+    </div>
+    <div class="btn-div text-center">
+      <button class="btn btn-lg w-75 text-center">Buy</button>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- 
 
-
-      <div class="card m-2">
-          <div class="row g-0">
-            <div class="col-12 col-lg-6" id="background">
-              <!-- <img srcset="images/image-product-mobile.jpg , images/image-desktop.jpg" alt=""> -->
+      <div class="card m-sm-3 m-2 rounded">
+          <div class="row g-0 rounded m-sm-3 m-xs-3">
+            <div class="col-sm-12 com-xs-12 col-md-6 col-lg-6 rounded h-100" id="background">
+               <img
+              class="img-card img-fluid"     
+              srcset="images/image-product-desktop.jpg 600w, images/image-product-mobile.jpg 686w"
+                   src="images/image-product-mobile.jpg"
+                   alt="Perfume" />
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-md-6 col-lg-6">
               <div class="card-body">
                 <h1 class="perfume text-muted">Perfume</h1>
                 <h5 class="card-title">Gabrielle Essence Eau De Parfum</h5>
@@ -41,19 +65,14 @@
                     <div class="d-grid gap-2 col-6 mx-auto">
                       <button class="btn" type="button"><i class="bi bi-cart"></i>  Add to Cart</button>
                     </div>
-                    
                 </div> 
               </div>
             </div>
-            
           </div>
-          
-        </div>
-        <div class="attribution sticky-bottom">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="#">Harmandeep</a>.
-        </div>
+        </div> -->
   <!-- Perfume -->
+
+
   <!-- Gabrielle Essence Eau De Parfum
 
   A floral, solar and voluptuous interpretation composed by Olivier Polge, 
@@ -64,6 +83,9 @@
 
   Add to Cart -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Harmandeep</a>.
+  </div>
 </body>
 </html>
